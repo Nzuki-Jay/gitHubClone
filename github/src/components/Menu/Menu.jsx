@@ -32,7 +32,7 @@ const Menu = ({openMenu}) => {
 
                 <hr></hr>
 
-                <a href="#" className="signout">Sign Out</a>
+                <a href="/" className="signout">Sign Out</a>
 
             </div>
 

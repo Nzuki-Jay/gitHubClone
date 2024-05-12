@@ -5,7 +5,7 @@ const Repo = ({repo}) => {
     return <>
         <div className='repository'>
             <div>
-                <a href="#">{repo.repo}</a>
+                <a href="/">{repo.repo}</a>
                 <span>{repo.status}</span>
             </div>
 

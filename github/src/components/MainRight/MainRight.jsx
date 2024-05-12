@@ -18,7 +18,8 @@ const MainRight = () => {
                     <div className="mainRightDashboard">
                         <h1>Welcome... This is GitHub clone with
                              React.js Sass and React-Router. </h1>
-                        <p>Follow me on <a href="https://www.linkedin.com/in/nzuki-mbula-901668236/" target="_blank" >Linkedin</a>,  <a href="https://github.com/" target="_blank">GitHub</a> and  <a href="https://www.instagram.com/_.nzuki_" target="_blank">Instagram</a> </p>
+                        <p>Follow me on <a href="https://www.linkedin.com/in/nzuki-mbula-901668236/" rel="noreferrer"  target="_blank" >Linkedin</a>,  
+                        <a href="https://github.com/" rel="noreferrer"  target="_blank">GitHub</a> and  <a href="https://www.instagram.com/_.nzuki_" rel="noreferrer"  target="_blank">Instagram</a> </p>
                         <a href="/profile" className="dashLink">GitHub Clone</a>
                     </div>
 
@@ -39,24 +40,24 @@ const MainRight = () => {
 
                         <div className="footerLinks">
                             <div className="links">
-                                <a href="#">Blog</a>
-                                <a href="#">About</a>
-                                <a href="#">Shop</a>
-                                <a href="#">GitHub Clone</a>
-                                <a href="#">Pricing</a>
+                                <a href="/">Blog</a>
+                                <a href="/">About</a>
+                                <a href="/">Shop</a>
+                                <a href="/">GitHub Clone</a>
+                                <a href="/">Pricing</a>
                             </div>
 
                             <div className="links">
-                                <a href="#">API</a>
-                                <a href="#">Training</a>
-                                <a href="#">Status</a>
-                                <a href="#">Security</a>                            
+                                <a href="/">API</a>
+                                <a href="/">Training</a>
+                                <a href="/">Status</a>
+                                <a href="/">Security</a>                            
                             </div>
 
                             <div className="links">
-                                <a href="#">Terms</a>
-                                <a href="#">Privacy</a>
-                                <a href="#">Docs</a>
+                                <a href="/">Terms</a>
+                                <a href="/">Privacy</a>
+                                <a href="/">Docs</a>
                             </div>
 
                         </div>
