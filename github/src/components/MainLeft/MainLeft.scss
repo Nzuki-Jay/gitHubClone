@@ -1,0 +1,121 @@
+@import '../../scss/functions';
+
+.mainLeft {
+    width: 350px;
+    background-color: var(--second-color);
+    border-right: 1px solid var(--line-color);
+    position: sticky;
+    overflow: scroll;
+    left: 0;
+    top: 70px;
+    bottom: 0;
+    height: calc(100vh - 70px);
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    img {
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    hr {
+        width: 100%;
+        background: var(--line-color);
+        height: 2px;
+        border: none;
+    }
+    
+    .wrapper {
+        padding: 20px 30px;
+        @include flex-grid($direction: column, $align: flex-start, $justify: center);
+        gap: 15px;  
+
+        input {
+            border: 1px solid var(--line-color);
+            outline: none;
+            background-color: transparent;
+            color: var(--white);
+            padding: 10px 20px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .mainLeftHeader {
+            @include flex-grid($align: center);
+            gap: 10px;   
+        }
+
+        .createRepo {
+            @include flex-grid($align: center, $justify: space-between);
+            width: 100%;
+
+            button {
+                padding: 6px 15px;
+                color: var(--white);
+                border-radius: 8px;
+                background-color: #2a913d;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #2ea043;
+                }
+                
+            }
+        }
+
+        .repoInput {
+            width: 100%;   
+        }
+
+        .repoList {
+            @include flex-grid($align: flex-start, $direction: column);
+            gap: 10px;
+            
+            .repo {  
+                @include flex-grid($align: center);
+                gap: 8px;
+                cursor: pointer;
+
+                span {
+                    font-size: 18px;
+                    font-weight: initial;
+                }
+            }
+
+            small {
+                font-size: 15px;
+                color: var(--grey-color);
+                cursor: pointer;
+                margin-top: 10px;
+            }
+        }
+
+        .activities{
+            @include flex-grid($direction: column);
+            gap: 10px;
+            width: 100%;
+            
+            p {
+                color: var(--grey-color);
+            }
+        }
+
+        .teams {
+            @include flex-grid($direction: column);
+            gap: 10px;
+            width: 100%;
+        }
+
+       
+    }
+}

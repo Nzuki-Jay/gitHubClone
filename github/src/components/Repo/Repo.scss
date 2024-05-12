@@ -1,0 +1,28 @@
+@import '../../scss/functions';
+
+.repository {
+    border: 1px solid var(--line-color);
+    padding: 20px;
+    @include flex-grid($direction: column, $align: flex-start);
+    gap: 20px;
+    border-radius: 8px;
+    width: 100%;
+
+    div {
+        @include flex-grid($justify: space-between);
+        width: 100%;
+
+        a {
+            font-size: 18px;
+            color: var(--text-blue-color);
+        }
+
+        span {
+            font-size: 18px;
+            border: 1px solid var(--line-color);
+            width: fit-content;
+            padding: 1px 4px;
+            border-radius: 13px;
+        }
+    }
+}

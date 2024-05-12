@@ -1,0 +1,60 @@
+@import '../../scss/functions';
+
+.menu {
+    background-color: var(--navbar-color);
+    border-radius: 8px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    animation: slideDown 0.3s ease;
+    z-index: 4;
+    box-shadow: 1px 1px 14px var(--navbar-color);
+
+
+    @keyframes slideDown {
+        from {
+            top: 20px;
+        }
+        to {
+            top: 60px;
+        }
+        
+    }
+
+
+    .wrapper {
+        @include flex-grid($direction: column, $align: flex-start);
+        gap: 10px;
+        padding: 20px;
+        font-size: 16px;
+        color: var(--grey-color);
+
+        a {
+            color: var(--grey-color);
+        }
+
+        span {
+            color: var(--gray-two);
+            cursor: pointer;
+        }
+
+        hr {
+            border: none;
+            background-color: var(--white);
+            height: 1px;
+            width: 100%
+        }
+
+        p {
+            cursor: pointer;
+        }
+
+        
+
+        div {
+            @include flex-grid($direction: column, $align: flex-start);
+            gap: 1rem;
+        }
+
+    }
+}

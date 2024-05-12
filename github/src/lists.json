@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Universe Code",
+        "repo": "youtube-clone",
+        "status": "Public",
+        "stack": "Next.js - Tailwind" 
+    },
+
+    {
+        "name": "Universe Code",
+        "repo": "dribble-clone",
+        "status": "Public",
+        "stack": "React.js - Tailwind" 
+    },
+
+    {
+        "name": "Universe Code",
+        "repo": "udemy-clone",
+        "status": "Public",
+        "stack": "React.js - Tailwind" 
+    },
+
+    {
+        "name": "Universe Code",
+        "repo": "portfolio-htmlcss",
+        "status": "Public",
+        "stack": "Html - Css" 
+    },
+
+    {
+        "name": "Universe Code",
+        "repo": "landing-page-html",
+        "status": "Public",
+        "stack": "Html - Css" 
+    },
+
+    {
+        "name": "Universe Code",
+        "repo": "website-htmlcss",
+        "status": "Public",
+        "stack": "Html - Css" 
+    }
+
+]

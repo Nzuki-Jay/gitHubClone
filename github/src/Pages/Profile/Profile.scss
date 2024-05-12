@@ -1,0 +1,159 @@
+@import '../../scss/functions';
+
+.profileContainer {
+    @include flex-grid($direction: column);
+    margin: 30px 20px;
+
+    .icon {
+        font-size: 18px;
+    }
+
+    hr {
+        background-color: var(--gray-two);
+        height: 1px;
+        border: none;
+        width: 100%;
+    }
+
+    .profileTop {
+        @include flex-grid($align: center, $justify: center);
+        gap: 30px;
+        margin-bottom: 20px;
+
+        .item {
+            @include flex-grid($align: center);
+            gap: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+
+    .profileBottom {
+        margin-top: 30px;
+        @include flex-grid($align: flex-start);
+        
+        .profileBottomLeft {
+           width: 300px;
+            @include flex-grid($direction: column, $align: flex-start, $justify: center);
+            gap: 30px;
+
+            .profileImage {
+                cursor: pointer;
+                position: relative;
+                align-self: center;
+
+                img {
+                    position: relative;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    width: 200px;
+                    height: 200px;
+                }
+
+                div {
+                    position: absolute;
+                    bottom: 30px;
+                    right: 10px;
+                    border: 1px solid var(--line-color);
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px; 
+                    background-color: var(--first-color); 
+                    @include flex-grid($align: center, $justify: center);      
+                    
+                }
+            }
+
+            .profileDetails {
+                @include flex-grid($direction: column);
+                gap: 1.5rem;
+                width: 100%;
+
+                span {
+                    font-size: 25px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+
+                button {
+                    width: 100%;
+                    font-size: 18px;
+                    padding: 8px 16px;
+                    background-color: var(--btn-color);
+                    border: 1px solid var(--line-color);
+                    border-radius: 8px;
+                    color: var(--white);
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: var(--border-color);
+                    }
+                }
+            }
+        }
+
+        .profileBottomRight {
+            flex: 2;
+            @include flex-grid($direction: column, $align: flex-start);
+            gap: 30px;
+            padding: 0 30px;
+            width: 100%;
+
+            .profileBottomRightTop {
+                border: 1px solid var(--line-color);
+                border-radius: 8px;
+                width: 100%;
+                padding: 30px;
+                @include flex-grid($direction: column, $align: flex-start);
+                gap: 20px;
+
+                .header {
+                    @include flex-grid($direction: column, $align: flex-start);
+                    gap: 15px;
+
+                    span {
+                        font-size: 18px;
+                        color: var(--grey-color);
+                    }
+                }
+
+                .details {
+                    @include flex-grid($direction: column, $align: flex-start);
+                    gap: 15px;
+
+                    span {
+                        color: var(--white);
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        color: var(--grey-color);
+                    }
+                }
+
+            }
+
+            .profileBottomRightBottom {
+                @include flex-grid($direction: column);
+                gap: 20px;
+                width: 100%;
+                font-size: 18px;
+                color:  var(--grey-color);
+
+                span {
+                    font-size: 20px;
+                }
+
+                .popularRepositories {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
+                }
+            }
+            
+        }
+    }
+
+}

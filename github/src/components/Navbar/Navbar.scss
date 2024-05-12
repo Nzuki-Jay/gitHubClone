@@ -1,0 +1,83 @@
+@import '../../scss/functions';
+
+.navbar {
+    @include flex-grid($align: center, $justify: space-between);
+    background-color: var(--border-color);
+    padding-inline: 30px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 4;
+
+
+    img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        border-radius: 50%;
+        cursor: poinster;
+    }
+
+    .navLeft {
+        @include flex-grid($align: center);
+        gap: 20px; 
+        
+        a {
+            color: var(--white);
+        }
+
+        .logo {
+            font-size: 40px;  
+            cursor: pointer;
+        }
+
+
+        input {
+            background-color: var(--input-color);
+            outline: none;
+            width: 300px;
+            padding: 10px 20px;
+            border: 1px solid var(--line-color);
+            color: var(--white);
+
+            &:focus-within {
+                width: 480px;
+                transition: width ease-in-out 0.3s;
+            }
+        }
+        
+    }
+
+    .navCenter {
+        flex: 1;
+        @include flex-grid($align: center);
+        gap: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        justify-self: flex-start;
+        margin-left: 20px;
+
+        span {
+            cursor: pointer;
+        }
+    }
+
+    .navRight {
+        @include flex-grid($align: center, $justify: flex-end);
+        gap: 15px;
+
+        .icons {
+            font-size: 18px;    
+            cursor: pointer;   
+        }
+
+        .navRightIcons {
+            @include flex-grid($align: center);
+            gap: 5px;
+            cursor: pointer;
+        }
+    }
+
+    
+}
