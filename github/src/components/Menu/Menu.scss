@@ -33,7 +33,8 @@
             color: var(--grey-color);
         }
 
-        span {
+        span, 
+        .links {
             color: var(--gray-two);
             cursor: pointer;
         }

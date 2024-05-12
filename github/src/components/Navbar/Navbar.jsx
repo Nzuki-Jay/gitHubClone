@@ -4,6 +4,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import Nimage from "../../assets/images.jpeg";
 import './Navbar.scss';
 import Menu from "../Menu/Menu";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -16,9 +17,9 @@ const Navbar = () => {
                 {/* Left */}
 
                 <div className="navLeft">
-                    <a href="/">
+                    <Link to="/">
                         <FaGithub className="logo" />
-                    </a>
+                    </Link>
                      
                     <div>
                         <input type="text" placeholder="Search...."/>

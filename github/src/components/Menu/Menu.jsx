@@ -1,4 +1,5 @@
 import './Menu.scss';
+import {Link} from 'react-router-dom';
 
 const Menu = ({openMenu}) => {
 
@@ -12,8 +13,12 @@ const Menu = ({openMenu}) => {
                 <hr></hr>
 
                 <div className="settings">
-                    <a href="/profile">Your profile</a>
-                    <a href="/profile">Your repositories</a>
+                    <Link to='/profile'>
+                        <span className='links'>Your profile</span>
+                    </Link>
+                    <Link className='links' to='/profile'>
+                        <span>Your repositories</span>
+                    </Link>                 
                     <p>Your codespace</p>
                     <p>Your organizations</p>
                     <p>Your projects</p>

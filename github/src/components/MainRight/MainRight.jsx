@@ -1,6 +1,7 @@
 import React from "react";
 import './MainRight.scss';
 import { FaGithub} from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const MainRight = () => {
 
@@ -20,7 +21,9 @@ const MainRight = () => {
                              React.js Sass and React-Router. </h1>
                         <p>Follow me on <a href="https://www.linkedin.com/in/nzuki-mbula-901668236/" rel="noreferrer"  target="_blank" >Linkedin</a>,  
                         <a href="https://github.com/" rel="noreferrer"  target="_blank">GitHub</a> and  <a href="https://www.instagram.com/_.nzuki_" rel="noreferrer"  target="_blank">Instagram</a> </p>
-                        <a href="/profile" className="dashLink">GitHub Clone</a>
+                        <Link to="/profile">
+                            <span className="dashLink">GitHub Clone</span>
+                        </Link> 
                     </div>
 
                     <div className="mainRightInfo">
