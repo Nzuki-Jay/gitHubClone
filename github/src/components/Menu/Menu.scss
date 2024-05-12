@@ -29,12 +29,12 @@
         font-size: 16px;
         color: var(--grey-color);
 
-        a {
+        a,
+        .links {
             color: var(--grey-color);
         }
 
-        span, 
-        .links {
+        span {
             color: var(--gray-two);
             cursor: pointer;
         }
